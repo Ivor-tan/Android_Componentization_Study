@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ivor.module002">
+
+    <application
+        android:name="debug.DebugModule2Application"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Structure.Base"
+        tools:replace="android:theme">
+        <activity android:name="debug.DebugModule2MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

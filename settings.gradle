@@ -1,0 +1,6 @@
+rootProject.name = "structure"
+include ':app'
+include ':moduleItem:module001'
+include ':moduleItem:modulebase'
+include ':moduleItem:module002'
+include ':moduleItem:modulecommon'

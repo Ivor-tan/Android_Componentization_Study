@@ -1,0 +1,25 @@
+ext {
+    isModule = true
+    android = [
+            minSdkVersion    : 18,
+            targetSdkVersion : 30,
+            versionCode      : 1,
+            versionName      : "1.0",
+            compileSdkVersion: 30,
+            buildToolsVersion: "30.0.3"
+    ]
+    dependencies = [
+            "kotlin-stdlib"              : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
+            "core-ktx"                   : 'androidx.core:core-ktx:1.3.1',
+            "androidx.appcompat"         : 'androidx.appcompat:appcompat:1.2.0',
+            "com.google.android.material": 'com.google.android.material:material:1.2.1',
+            "androidx.constraintlayout"  : 'androidx.constraintlayout:constraintlayout:2.0.1',
+            "junit"                      : 'junit:junit:4.+',
+
+    ]
+
+    androidTestImplementation = [
+            "androidx.test.ext"     : 'androidx.test.ext:junit:1.1.2',
+            "androidx.test.espresso": 'androidx.test.espresso:espresso-core:3.3.0'
+    ]
+}
