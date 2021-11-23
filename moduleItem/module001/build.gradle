@@ -4,6 +4,7 @@ if (Boolean.valueOf(rootProject.ext.isModule)) {
     apply plugin: 'com.android.library'
 }
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
 //plugins {
 //    id 'com.android.application'
 //    id 'kotlin-android'
@@ -15,11 +16,15 @@ android {
 
     defaultConfig {
 //        applicationId "com.ivor.module001"
-        minSdkVersion 18
+        minSdkVersion 22
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
+        kapt {
+            arguments {
+                arg("AROUTER_MODULE_NAME", project.getName())
+            }
+        }
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -61,4 +66,5 @@ dependencies {
     implementation project(path: ':moduleItem:modulebase')
     implementation project(path: ':moduleItem:modulecommon')
 
+    kapt rootProject.ext.annotationProcessor["arouter"]
 }

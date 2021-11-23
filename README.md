@@ -7,3 +7,8 @@
 参考
 https://www.jianshu.com/p/ed845d796710
 https://www.jianshu.com/p/748bf621a9a0
+
+2021-11-23  
+ps：每一个子module需要添加annotationProcessor 'com.alibaba:arouter-compiler:?'
+    kotlin 需要额外配置， Kotlin configuration reference 'Other#2'
+    ARoute的初始化与销毁都在Application中执行

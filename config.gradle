@@ -1,5 +1,5 @@
 ext {
-    isModule = true
+    isModule = false
     android = [
             minSdkVersion    : 18,
             targetSdkVersion : 30,
@@ -15,7 +15,10 @@ ext {
             "com.google.android.material": 'com.google.android.material:material:1.2.1',
             "androidx.constraintlayout"  : 'androidx.constraintlayout:constraintlayout:2.0.1',
             "junit"                      : 'junit:junit:4.+',
-
+            "arouter"                    : 'com.alibaba:arouter-api:1.5.2',
+    ]
+    annotationProcessor = [
+            "arouter": 'com.alibaba:arouter-compiler:1.5.2'
     ]
 
     androidTestImplementation = [
