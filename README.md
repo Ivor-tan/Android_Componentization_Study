@@ -7,6 +7,7 @@
 参考
 https://www.jianshu.com/p/ed845d796710
 https://www.jianshu.com/p/748bf621a9a0
+https://www.jianshu.com/p/f29ef0ec0ab0
 
 2021-11-23  
 ps：每一个子module需要添加annotationProcessor 'com.alibaba:arouter-compiler:?'
